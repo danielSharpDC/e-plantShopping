@@ -280,7 +280,7 @@ const handlePlantsClick = (e) => {
                 <div> 
                     <a href="#" onClick={(e) => handleCartClick(e)} style={styleA}>
                         <h1 className='cart'>
-                            {cart.reduce((acc,item) => acc + item, 0)}
+                            {cart.reduce((acc,item) => acc + item.quantity, 0)}
                             <svg xmlns="http://www.w3.org/2000/svg" 
                             viewBox="0 0 256 256" id="IconChangeColor" 
                             height="68" width="68">
